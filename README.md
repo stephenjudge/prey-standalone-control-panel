@@ -25,7 +25,7 @@ run:
 rackup -s thin
 ```
 
-And the app should load. By browing to / you'll be requested a username and 
+And the app should load. By browsing to / you'll be requested a username and 
 password via Basic HTTP auth. The default values are 'admin/secret' but you can
 change it by modifying config.ru if you want to.
 
