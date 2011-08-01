@@ -38,6 +38,7 @@ DEPENDENCIES
   i18n
   mongo_mapper
   rack
+  sinatra
   thin
 
 METADATA
