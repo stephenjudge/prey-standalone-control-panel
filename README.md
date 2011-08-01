@@ -15,14 +15,14 @@ and MongoMapper.
 Once you've got Mongo and Ruby set up, clone the repo and run:
 
 ```
-   bundle install
+bundle install
 ```
 
 And let Bundler take care of all the gem dependencies. Once you're ready you can
 run:
 
 ```
-   rackup -s thin
+rackup -s thin
 ```
 
 And the app should load. By browing to / you'll be requested a username and 
@@ -35,14 +35,14 @@ Once you've created a device on the admin panel, the check URL on the device
 should be:
 
 ```
-   http://your.server.com/check/:device_id
+http://your.server.com/check/:device_id
 ```
 
 For example, if the ID of your newly created device is 000000123456, the full
 url should look like:
 
 ```
-   http://your.server.com/check/000000123456
+http://your.server.com/check/000000123456
 ```
 
 And that's it. Your device should now start checking its state against your own
