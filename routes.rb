@@ -29,7 +29,7 @@ module Prey
 					end
 					xml.modules do
 						device.module_list.split.each do |mod|
-							xml.module :active => true, :name => mod, :type => module_type(mod) do
+							xml.module :active => true, :name => mod.downcase, :type => module_type(mod) do
 								xml.enabled true
 							end
 						end
@@ -39,7 +39,7 @@ module Prey
 		end
 
 		def module_type(mod)
-			REPORT_MODULES.include?(mod) ? 'report' : 'action'
+			REPORT_MODULES.include?(mod.downcase) ? 'report' : 'action'
 		end
 
 	end
