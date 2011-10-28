@@ -50,6 +50,10 @@ Control Panel. If it ever goes missing, just log in again and change the missing
 field for that device from 'false' to 'true', and Prey will begin to send reports
 via email using your SMTP settings.
 
+Additionally, you can change the execution delay and modify the modules which will
+be triggered remotely using the module_list field. Just make sure you separate 
+them with spaces (e.g. "geo network lock").
+
 ## Credits
 
 Written by Tomás Pollak.
