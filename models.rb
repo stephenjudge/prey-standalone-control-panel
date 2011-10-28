@@ -7,6 +7,7 @@ class Device
 
 	key :name, String, :required => true
 	key :missing, Boolean, :default => false
-	key :delay, Integer, :default => 20
+	key :delay, Integer, :default => 20, :in => 2..59
 	key :module_list, String, :default => 'geo network session webcam'
+
 end
